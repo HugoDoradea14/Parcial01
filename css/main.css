@@ -107,10 +107,10 @@ p{
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 11em;        /* Se cambio el tamaño de las imagenes*/
+    font-size: 7em;        /* Se cambio el tamaño de las imagenes*/
     display: flex;          /*  Se hizo que el contenedor se adptara al tamaño de imagen*/
-    margin-left: 0.20em;       /*Separando imagenes de redes sociales*/
-    margin-right: 0.20em;
+    margin-left: 0.15em;       /*Separando imagenes de redes sociales*/
+    margin-right: 0.15em;
 }
 .fa-arrow-circle-down{      /*cambiando el tamaño de la flecha*/
     font-size: 7em;
@@ -237,8 +237,9 @@ p{
 }
 
 .contact-form input, .contact-form textarea{
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     border: none;
+
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
@@ -303,6 +304,16 @@ footer .social-links {
     
 }
 
+
+
+/*div.container.about{
+    display: flex;
+    flex-direction: column-reverse;
+
+}*/
+
+
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
@@ -360,10 +371,45 @@ footer .social-links {
 
 @media only screen and (min-width: 1440px) {
 
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0em;        /*  se agrega margen para separar 
+        logo tanto de borde superior como 
+        borde izquierdo*/
+        margin-left: -5em;
+        margin-right: -5em;
+    }
+
     /*TODO: FALTA CSS */
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    div.bio-info{
+        display: flex;
+        margin: 0em;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        float:left; /*Se usa para traer el siguiente elemnto contact, junto a este en la misma*/
+    }
+    div.contact{
+        display: flex;
+        margin: 0em;
+        flex-direction: column;
+        align-items: right;
+        width: 50%;
+        }
+    .social-links li a{
+        color: #D7DEE6;
+        text-decoration: none;
+        font-size: 11em;        /* Se cambio el tamaño de las imagenes*/
+        display: flex;          /*  Se hizo que el contenedor se adptara al tamaño de imagen*/
+        margin-left: 0.20em;       /*Separando imagenes de redes sociales*/
+        margin-right: 0.20em;
     }
 }
